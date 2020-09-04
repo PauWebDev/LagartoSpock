@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 *:focus,
@@ -20,8 +22,16 @@ body {
     flex-direction: column;
     width: 80%;
     height: 80%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.titulo-juego {
+    background: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
 #select {
@@ -29,13 +39,16 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    background: #000;
+    background: #f1f1f1;
 }
 
-.character {
-    background: #324212;
-    height: 487px;
-    width: 200px;
+.character,
+.fight {
+    height: 480px;
+    width: 500px;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    text-align: center;
 }
 
 .buttons button {
@@ -43,4 +56,9 @@ body {
     padding: 12px 22px;
     background-color: #0000ff;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    outline: 3px solid #000;
 }

@@ -45,56 +45,76 @@ function opcion(humano) {
     var id_resultado = document.getElementById("resultado");
 
     if (nombre[humano] == nombre[0]) {
-        id_tu.style.background = "url('../image/piedra.png')";
+        id_tu.style.background = "url('./image/piedra.png')";
+        id_tu.style.backgroundRepeat = "no-repeat";
+        id_tu.style.backgroundPosition = "center";
     }
     if (nombre[humano] == nombre[1]) {
-        id_tu.style.background = "url('../image/papel.png')";
+        id_tu.style.background = "url('./image/papel.png')";
+        id_tu.style.backgroundRepeat = "no-repeat";
+        id_tu.style.backgroundPosition = "center";
     }
     if (nombre[humano] == nombre[2]) {
-        id_tu.style.background = "url('../image/tijera.png')";
+        id_tu.style.background = "url('./image/tijera.png')";
+        id_tu.style.backgroundRepeat = "no-repeat";
+        id_tu.style.backgroundPosition = "center";
     }
     if (nombre[humano] == nombre[3]) {
-        id_tu.style.background = "url('../image/lagarto.png')";
+        id_tu.style.background = "url('./image/lagarto.png')";
+        id_tu.style.backgroundRepeat = "no-repeat";
+        id_tu.style.backgroundPosition = "center";
     }
     if (nombre[humano] == nombre[4]) {
-        id_tu.style.background = "url('../image/spock.png')";
+        id_tu.style.background = "url('./image/spock.png')";
+        id_tu.style.backgroundRepeat = "no-repeat";
+        id_tu.style.backgroundPosition = "center";
     }
-
 
     if (nombre[cpu] == nombre[0]) {
-        id_cpu.style.background = "url('/image/piedra.png')";
+        id_cpu.style.background = "url('./image/piedra.png')";
+        id_cpu.style.backgroundRepeat = "no-repeat";
+        id_cpu.style.backgroundPosition = "center";
     }
     if (nombre[cpu] == nombre[1]) {
-        id_cpu.style.background = "url('../image/papel.png')";
+        id_cpu.style.background = "url('./image/papel.png')";
+        id_cpu.style.backgroundRepeat = "no-repeat";
+        id_cpu.style.backgroundPosition = "center";
     }
     if (nombre[cpu] == nombre[2]) {
-        id_cpu.style.background = "url('../image/tijera.png')";
+        id_cpu.style.background = "url('./image/tijera.png')";
+        id_cpu.style.backgroundRepeat = "no-repeat";
+        id_cpu.style.backgroundPosition = "center";
     }
     if (nombre[cpu] == nombre[3]) {
-        id_cpu.style.background = "url('../image/lagarto.png')";
+        id_cpu.style.background = "url('./image/lagarto.png')";
+        id_cpu.style.backgroundRepeat = "no-repeat";
+        id_cpu.style.backgroundPosition = "center";
     }
     if (nombre[cpu] == nombre[4]) {
-        id_cpu.style.background = "url('../image/spock.png')";
+        id_cpu.style.background = "url('./image/spock.png')";
+        id_cpu.style.backgroundRepeat = "no-repeat";
+        id_cpu.style.backgroundPosition = "center";
     }
 
 
     if (resultadoTxt[resultado] == resultadoTxt[0] || (resultadoTxt[resultado] == resultadoTxt[1]) || (resultadoTxt[resultado] == resultadoTxt[2])) {
-        id_vs.style.background = "url('../image/versus.webp') no-repeat";
-        id_vs.style.backgroundSize = "150px 150px";
+        id_vs.style.background = "url('./image/versus.webp') no-repeat";
+        id_vs.style.backgroundSize = "300px 300px";
+        id_vs.style.backgroundPosition = "center";
     }
 
     if (resultadoTxt[resultado] == resultadoTxt[0]) {
-        // id_resultado.value = "Empate";
+
         id_resultado.textContent = "Empatas"
     }
 
     if (resultadoTxt[resultado] == resultadoTxt[1]) {
-        // id_resultado.value = "Tu Ganas";
+
         id_resultado.textContent = "¡ Ganaste ! "
     }
 
     if (resultadoTxt[resultado] == resultadoTxt[2]) {
-        // id_resultado.value = "Tu Pierdes";
+
         id_resultado.textContent = " Has perdido"
     }
 
